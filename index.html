@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>aftercore · Agente AI per le richieste di offerta</title>
+  <meta name="description" content="Landing riservata Aftercore per lavorazioni meccaniche conto terzi. Non indicizzare.">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+  <meta name="referrer" content="no-referrer">
+  <meta name="google" content="nositelinkssearchbox">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="logo" href="#top" aria-label="aftercore">
+        <img src="assets/logo-light.png" alt="aftercore">
+      </a>
+      <button class="nav-toggle" type="button" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="Principale">
+        <a href="#prodotto">Prodotto</a>
+        <a href="#capacita">Capacità</a>
+        <a href="#integrazioni">Integrazioni</a>
+        <a href="#contatti">Contatti</a>
+        <a class="btn" href="#demo">Prenota Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-copy">
+          <span class="eyebrow">Company presentation · 2026</span>
+          <h1>Un agente AI per le richieste di offerta</h1>
+          <p class="lead">Legge i disegni, cerca nello storico lavorazioni e prepara il preventivo.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#demo">Prenota una demo</a>
+            <a class="btn btn-ghost" href="tel:+393463060372">+39 346 3060372</a>
+          </div>
+          <p class="hero-meta">Lavorazioni meccaniche · Conto terzi · Preventivazione</p>
+        </div>
+
+        <div class="graph" aria-label="Sei capacità operative">
+          <div class="graph-col">
+            <article class="cap"><div><strong>Lettura disegni tecnici</strong></div><span class="cap-num">01</span></article>
+            <article class="cap"><div><strong>Generatore offerte</strong></div><span class="cap-num">03</span></article>
+            <article class="cap"><div><strong>Knowledge base lavorazioni</strong></div><span class="cap-num">05</span></article>
+          </div>
+          <div class="hex-wrap" aria-hidden="true">
+            <svg class="hex" viewBox="0 0 120 132" fill="none">
+              <defs>
+                <linearGradient id="hexFill" x1="20" y1="10" x2="100" y2="120" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#5ad7ff"/>
+                  <stop offset="1" stop-color="#0e80f6"/>
+                </linearGradient>
+              </defs>
+              <path d="M60 4L112 34V98L60 128L8 98V34L60 4Z" fill="url(#hexFill)"/>
+              <text x="60" y="78" text-anchor="middle" fill="#071222" font-family="Poppins, sans-serif" font-size="32" font-weight="700">AI</text>
+            </svg>
+          </div>
+          <div class="graph-col">
+            <article class="cap"><span class="cap-num">02</span><div><strong>Preventivazione da storico</strong></div></article>
+            <article class="cap"><span class="cap-num">04</span><div><strong>Gestione richieste di offerta</strong></div></article>
+            <article class="cap"><span class="cap-num">06</span><div><strong>Anagrafica articoli e storico puliti</strong></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section problem" id="prodotto">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Il problema</span>
+          <h2>Preventivare dipende ancora da chi c'era</h2>
+        </div>
+        <div class="cards-3">
+          <article class="card">
+            <svg class="icon-hex" viewBox="0 0 34 38" fill="none" aria-hidden="true"><path d="M17 2L31 10V28L17 36L3 28V10L17 2Z" stroke="currentColor" stroke-width="1.5"/></svg>
+            <h3>Richieste che arrivano come disegni</h3>
+            <p>PDF, foto del disegno, file STEP. Spesso senza codice e senza specifiche complete: capire cosa è richiesto porta via ore.</p>
+          </article>
+          <article class="card">
+            <svg class="icon-hex" viewBox="0 0 34 38" fill="none" aria-hidden="true"><path d="M17 2L31 10V28L17 36L3 28V10L17 2Z" stroke="currentColor" stroke-width="1.5"/></svg>
+            <h3>Tempi ciclo stimati a memoria</h3>
+            <p>Il costo lo sa il preventivista senior. Due persone quotano lo stesso pezzo a prezzi diversi.</p>
+          </article>
+          <article class="card">
+            <svg class="icon-hex" viewBox="0 0 34 38" fill="none" aria-hidden="true"><path d="M17 2L31 10V28L17 36L3 28V10L17 2Z" stroke="currentColor" stroke-width="1.5"/></svg>
+            <h3>Storico offerte inutilizzato</h3>
+            <p>Pezzi simili già quotati e lavorati esistono, ma ritrovarli è più lento che rifare il preventivo da zero.</p>
+          </article>
+        </div>
+        <p class="result-line">Il risultato: offerte lente, marginalità incerta, richieste che restano senza risposta.</p>
+      </div>
+    </section>
+
+    <section class="section" id="capacita">
+      <div class="wrap split">
+        <div class="copy">
+          <span class="eyebrow">Chat operativa</span>
+          <h2>Una chat che legge il disegno e ti dice cosa abbiamo già fatto</h2>
+          <p class="lead">Si carica il disegno del cliente. L'agente estrae le specifiche e le confronta con lo storico delle lavorazioni.</p>
+          <ul class="bullets">
+            <li><span class="dash">—</span>Materiale, ingombri, tolleranze critiche e trattamento, letti dal disegno.</li>
+            <li><span class="dash">—</span>Pezzi simili già lavorati, con tempo ciclo e prezzo battuto.</li>
+          </ul>
+        </div>
+        <div class="panel" aria-hidden="true">
+          <div class="chat-head">
+            <img src="assets/logo-white.png" alt="">
+            <div>
+              <strong>Assistente aftercore</strong>
+              <small>RFQ e preventivazione · nuova conversazione</small>
+            </div>
+            <span class="online">ONLINE</span>
+          </div>
+          <div class="chat-body">
+            <div class="bubble">Carica il disegno: estraggo materiale, quote e tolleranze, poi cerco i pezzi simili che abbiamo già lavorato.</div>
+            <div class="file-chip">PDF DIS-4471_rev.B.pdf</div>
+            <div class="spec">
+              <div class="spec-label">Specifiche estratte</div>
+              <div class="spec-grid">
+                <div><span>Materiale</span>11SMn30</div>
+                <div><span>Ingombri</span>Ø22 × 85</div>
+                <div><span>Tolleranza</span>h7 su Ø22</div>
+                <div><span>Trattamento</span>zincatura bianca</div>
+              </div>
+            </div>
+            <div class="similar">
+              <div class="similar-label">Pezzi simili già lavorati</div>
+              <div class="similar-row"><span>BOC-2210 · Ø22×80 · 11SMn30</span><span class="price">€ 3,85/pz · lotto 500</span></div>
+              <div class="similar-row"><span>PRN-1808 · Ø18×90 · 11SMn30</span><span class="price">€ 4,10/pz · lotto 250</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Riconoscimento</span>
+          <h2>Estrae le specifiche dal disegno, anche se è una scansione</h2>
+        </div>
+        <div class="cards-3" style="grid-template-columns:1fr 1fr">
+          <article class="card">
+            <h3>Da disegno cliente</h3>
+            <p>PDF, scansioni e foto storte: legge quote, tolleranze geometriche, rugosità, materiale e trattamento.</p>
+          </article>
+          <article class="card">
+            <h3>Da modello 3D</h3>
+            <p>File STEP e DWG: ricava ingombri, volume e feature di lavorazione.</p>
+          </article>
+        </div>
+        <div class="formats">
+          Formati accettati
+          <span class="tag">PDF</span>
+          <span class="tag">DWG</span>
+          <span class="tag">STEP</span>
+          <span class="tag">JPG</span>
+        </div>
+        <div class="extract-bar">
+          <div>
+            <small>Estrazione · DIS-4471_rev.B.pdf</small>
+            <div>Acciaio 11SMn30 · Ø22 × 85 · tolleranza h7 · zincatura</div>
+          </div>
+          <div><span class="dot-ok"></span>3 quote critiche rilevate</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split reverse">
+        <div class="copy">
+          <span class="eyebrow">Storico lavorazioni</span>
+          <h2>Impara dai pezzi già fatti</h2>
+          <p class="lead">Ogni pezzo prodotto diventa un riferimento per il preventivo successivo.</p>
+          <ul class="bullets">
+            <li><span class="dash">—</span>Attrezzaggio, utensili e parametri di lavorazione.</li>
+            <li><span class="dash">—</span>Tempo ciclo reale a consuntivo e percentuale di scarto.</li>
+            <li><span class="dash">—</span>Prezzo battuto e se l'offerta è stata vinta o persa.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <div class="sheet-head">
+            <div>
+              <strong>BOC-2210 · Boccola Ø22×80</strong>
+              <small class="muted">Knowledge base lavorazioni · scheda pezzo</small>
+            </div>
+            <span class="badge badge-ok">Offerta vinta</span>
+          </div>
+          <div class="kv">
+            <div><span>Macchina</span>Tornio CNC Biglia B465</div>
+            <div><span>Materiale</span>11SMn30 · barra Ø25</div>
+            <div><span>Attrezzaggio</span>45 min · pinza + torretta 3</div>
+            <div><span>Utensili</span>DCMT 11 · punta HSS Ø8</div>
+          </div>
+          <div class="inset">
+            <div class="inset-label">Tempo ciclo · preventivo vs consuntivo</div>
+            <div class="stat-row"><span>Preventivato</span><span>1' 20"</span></div>
+            <div class="stat-row"><span>Consuntivo su 500 pz</span><span class="warn">1' 34"</span></div>
+            <div class="stat-row"><span>Scarti</span><span>1,2 %</span></div>
+            <div class="stat-row"><span>Prezzo battuto</span><span class="ok">€ 3,85 / pz</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap split">
+        <div class="copy">
+          <span class="eyebrow">Consuntivazione</span>
+          <h2>Chiude il cerchio: quanto è costato davvero</h2>
+          <p class="lead">A commessa chiusa l'agente confronta il preventivo con i dati del reparto. Lo scostamento torna nello storico e corregge il preventivo successivo.</p>
+          <ul class="bullets">
+            <li><span class="dash">—</span>Tempo macchina rilevato per fase, non stimato.</li>
+            <li><span class="dash">—</span>Attrezzaggio ripartito sul lotto effettivo.</li>
+            <li><span class="dash">—</span>Scarti e rilavorazioni a carico della commessa.</li>
+            <li><span class="dash">—</span>Margine reale per articolo e per cliente.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <div class="sheet-head">
+            <div>
+              <strong>Commessa 26/0418 · BOC-2210 · 500 pz</strong>
+              <small class="muted">Consuntivo lavorazioni · chiusa il 04/09</small>
+            </div>
+            <span class="badge badge-cyan">Chiusa</span>
+          </div>
+          <div class="inset">
+            <div class="phase-row muted"><span>Fase</span><span>Prev.</span><span>Cons.</span></div>
+            <div class="phase-row"><span>Taglio barra</span><span>0' 12"</span><span class="warn">0' 14"</span></div>
+            <div class="phase-row"><span>Tornitura CNC</span><span>1' 20"</span><span class="warn">1' 34"</span></div>
+            <div class="phase-row"><span>Foratura</span><span>0' 22"</span><span class="ok">0' 20"</span></div>
+            <div class="phase-row"><span>Attrezzaggio</span><span>45'</span><span class="warn">58'</span></div>
+            <div class="phase-row"><span>Zincatura c/terzi</span><span>€ 0,32</span><span class="warn">€ 0,35</span></div>
+            <div class="phase-row"><span>Costo preventivato</span><span></span><span>€ 3,27 / pz</span></div>
+            <div class="phase-row"><span>Costo consuntivo</span><span></span><span class="warn">€ 3,54 / pz</span></div>
+            <div class="phase-row"><span>Prezzo battuto</span><span></span><span class="ok">€ 3,85 / pz</span></div>
+          </div>
+          <p class="note">Lo scostamento sul tempo ciclo viene applicato al prossimo preventivo dello stesso articolo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap split reverse">
+        <div class="copy">
+          <span class="eyebrow">Ricerca</span>
+          <h2>Trova nello storico il pezzo più simile</h2>
+          <p class="lead">Si descrive il pezzo a parole, come lo si direbbe in officina. L'agente cerca nello storico offerte e lavorazioni.</p>
+          <ul class="bullets">
+            <li><span class="dash">—</span>Percentuale di somiglianza e codice interno.</li>
+            <li><span class="dash">—</span>Tempo ciclo e ultimo prezzo praticato, con il lotto.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <div class="sheet-head">
+            <div class="inset-label" style="margin:0">Ricerca nello storico</div>
+          </div>
+          <div class="search-q">“boccola in ottone Ø18, tornita e forata, lotto 500”</div>
+          <article class="match">
+            <div class="match-top"><strong>BOC-1810</strong><small>Somiglianza 94%</small></div>
+            <p>CuZn39Pb3 · Ø18×24 · ciclo 0' 52"</p>
+            <p>Ultimo prezzo € 1,24 / pz · lotto 500 · mar 2026</p>
+          </article>
+          <article class="match">
+            <div class="match-top"><strong>BOC-1812</strong><small>Somiglianza 81%</small></div>
+            <p>CuZn39Pb3 · Ø18×32 · ciclo 1' 05"</p>
+            <p>Ultimo prezzo € 1,48 / pz · lotto 300 · nov 2025</p>
+          </article>
+          <article class="match">
+            <div class="match-top"><strong>BOC-2012</strong><small>Somiglianza 67%</small></div>
+            <p>CuZn39Pb3 · Ø20×30 · ciclo 1' 02"</p>
+            <p>Ultimo prezzo € 1,52 / pz · lotto 200 · offerta persa</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Qualità dei dati</span>
+          <h2>Riordina anagrafica e storico offerte, anche se i dati sono sparsi</h2>
+        </div>
+        <div class="compare">
+          <article class="card before">
+            <h3>Prima · dati sparsi</h3>
+            <ul>
+              <li>Stessa geometria censita con tre codici diversi<br><span class="sub">“boccola ott.” · “BOCC-OTTONE” · “bocc.18”</span></li>
+              <li>Materiali scritti in dieci modi diversi</li>
+              <li>Offerte sparse tra cartelle di rete ed Excel</li>
+            </ul>
+          </article>
+          <div class="arrow" aria-hidden="true">→</div>
+          <article class="card after">
+            <h3>Dopo · dati interrogabili</h3>
+            <ul>
+              <li>Anagrafica unica per geometria e materiale<br><span class="sub">BOC-1810 → boccola CuZn39Pb3 Ø18×24, un solo codice</span></li>
+              <li>Storico offerte interrogabile, con esito vinta o persa</li>
+              <li>Tempi ciclo consuntivati per articolo</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Offerte e fornitori</span>
+          <h2>Prepara l'offerta, o chiede il grezzo se serve</h2>
+        </div>
+        <div class="offer-grid">
+          <article class="panel">
+            <div class="sheet-head">
+              <div>
+                <div class="inset-label" style="margin:0 0 8px">Preventivo pronto</div>
+                <strong>BOC-2210 · boccola Ø22×85, 11SMn30</strong>
+              </div>
+            </div>
+            <div class="inset">
+              <div class="stat-row"><span>Materiale · barra Ø25</span><span>€ 0,86</span></div>
+              <div class="stat-row"><span>Tornitura CNC · 1' 34"</span><span>€ 1,41</span></div>
+              <div class="stat-row"><span>Attrezzaggio ripartito</span><span>€ 0,18</span></div>
+              <div class="stat-row"><span>Zincatura c/terzi</span><span>€ 0,32</span></div>
+              <div class="stat-row"><span>Ricarico 18%</span><span>€ 0,50</span></div>
+            </div>
+            <div class="inset">
+              <div class="inset-label">Prezzo al pezzo · scaglioni</div>
+              <div class="tiers">
+                <div class="stat-row"><span>100 pz</span><span>€ 4,35</span></div>
+                <div class="stat-row"><span>250 pz</span><span>€ 3,68</span></div>
+                <div class="stat-row"><span>500 pz</span><span class="hl">€ 3,21</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="panel">
+            <div class="sheet-head">
+              <div>
+                <div class="inset-label" style="margin:0 0 8px">Richiesta al fornitore</div>
+                <strong>Voce non a magazzino né a listino</strong>
+              </div>
+            </div>
+            <div style="padding:0 16px 8px">
+              <div class="mail">
+                <div><b>A:</b> vendite@acciaieriabrianza.it</div>
+                <div><b>Ogg:</b> Richiesta quotazione barra 11SMn30 Ø25</div>
+                <p>“Serve prezzo e disponibilità per 180 kg, consegna entro 10 giorni.”</p>
+              </div>
+              <div class="mail">
+                <div><b>A:</b> preventivi@zincaturaverdi.it</div>
+                <div><b>Ogg:</b> Zincatura bianca · 500 pz Ø22×85</div>
+                <p>“Prezzo al pezzo e tempo di lavorazione.”</p>
+              </div>
+            </div>
+            <p class="note">L'approvazione del preventivo resta sempre al preventivista.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="integrazioni">
+      <div class="wrap">
+        <div class="section-head" style="text-align:center">
+          <span class="eyebrow">Integrazioni</span>
+          <h2 style="max-width:none">Si collega ai gestionali che usi già</h2>
+          <p class="lead" style="margin:16px auto 0">L'agente legge anagrafiche, listini, cicli e giacenze dal tuo gestionale o da un database alimentato dai tuoi dati, senza cambiare i tuoi processi.</p>
+        </div>
+        <div class="erp-grid">
+          <div class="erp">TeamSystem</div>
+          <div class="erp">Zucchetti</div>
+          <div class="erp">Mago4</div>
+          <div class="erp">Arca Evolution</div>
+          <div class="erp">Passepartout Mexal</div>
+          <div class="erp">Sistemi (e/)</div>
+          <div class="erp">Gamma</div>
+          <div class="erp">Danea Easyfatt</div>
+          <div class="erp">SAP Business One</div>
+          <div class="erp">Dynamics 365 BC</div>
+        </div>
+        <p class="result-line">Leggiamo anche cartelle disegni, storico offerte in Excel e dati dal MES.<br>Non vedi il tuo gestionale? Ci integriamo via API, export/import o database dedicato.</p>
+      </div>
+    </section>
+
+    <section class="section clients">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Lavoriamo con</span>
+          <h2>Lavoriamo con aziende di tutte le dimensioni</h2>
+        </div>
+        <div class="logo-grid">
+          <div class="logo-card"><img src="assets/logo-isoclima.png" alt="Isoclima"></div>
+          <div class="logo-card"><img src="assets/logo-rossi.png" alt="Rossi"></div>
+          <div class="logo-card"><img src="assets/logo-emmeci.png" alt="Emmeci Heat Exchangers"></div>
+          <div class="logo-card"><img src="assets/logo-idealtec.png" alt="Idealtec"></div>
+          <div class="logo-card"><img src="assets/logo-tsg.png" alt="TSG"></div>
+          <div class="logo-card"><img src="assets/logo-toptaglio.png" alt="Toptaglio"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section demo" id="demo">
+      <div class="wrap demo-grid">
+        <div>
+          <span class="eyebrow">Demo</span>
+          <h2>Vediamo aftercore sul vostro ufficio preventivi</h2>
+          <p class="lead">30 minuti, sui vostri casi reali di lavorazioni conto terzi. Vi mostriamo l'agente al lavoro: dal disegno allo storico, fino al preventivo o alla richiesta al fornitore.</p>
+          <p class="lead">Nessun impegno — l'approvazione resta sempre al preventivista.</p>
+          <p><a class="btn btn-ghost" href="tel:+393463060372">+39 346 3060372</a></p>
+        </div>
+        <div class="panel" id="contatti">
+          <form class="form" id="demo-form" novalidate>
+            <label>Nome e cognome
+              <input name="name" type="text" placeholder="Mario Rossi" required autocomplete="name">
+            </label>
+            <label>Azienda
+              <input name="company" type="text" placeholder="Nome azienda" required autocomplete="organization">
+            </label>
+            <label>Ruolo
+              <input name="role" type="text" placeholder="Preventivista / Ufficio tecnico" required>
+            </label>
+            <label>Email aziendale
+              <input name="email" type="email" placeholder="nome@azienda.it" required autocomplete="email">
+            </label>
+            <label>Quante richieste di offerta gestite a settimana?
+              <select name="rfq_volume" required>
+                <option value="">Seleziona…</option>
+                <option>Meno di 10</option>
+                <option>10 – 30</option>
+                <option>30 – 80</option>
+                <option>Oltre 80</option>
+              </select>
+            </label>
+            <label>Quanto spesso i disegni arrivano senza codice o specifiche complete?
+              <select name="incomplete_drawings" required>
+                <option value="">Seleziona…</option>
+                <option>Quasi sempre</option>
+                <option>Spesso</option>
+                <option>A volte</option>
+                <option>Raramente</option>
+              </select>
+            </label>
+            <label>Consuntivate i tempi ciclo a commessa chiusa?
+              <select name="consuntivo" required>
+                <option value="">Seleziona…</option>
+                <option>Sì</option>
+                <option>No</option>
+                <option>A volte</option>
+              </select>
+            </label>
+            <label class="hp" aria-hidden="true">Sito web
+              <input name="_honey" tabindex="-1" autocomplete="off">
+            </label>
+            <button class="btn" type="submit">Richiedi una demo</button>
+            <p class="form-error" id="form-error" role="status"></p>
+            <p class="form-note">Inviando accetti di essere ricontattato per fissare la demo. Invio a gbasso@aftercore.ai</p>
+          </form>
+          <div class="form-ok" id="form-ok">
+            <h3>Richiesta ricevuta</h3>
+            <p class="lead">Ti ricontattiamo a breve per fissare la demo. Grazie.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <img src="assets/logo-white.png" alt="aftercore" style="height:22px;margin-bottom:10px">
+        <div>Via Nino Bixio 11, 20159 Milano</div>
+        <div><a href="https://aftercore.ai">aftercore.ai</a> · <a href="tel:+393463060372">+39 346 3060372</a></div>
+      </div>
+      <div>
+        <div>Lun – Ven: 8 – 18</div>
+        <div>2026 © Peoplefirst Srl · P.IVA 03981510120</div>
+        <div>Pagina riservata, non indicizzata.</div>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

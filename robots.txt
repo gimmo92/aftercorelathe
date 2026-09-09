@@ -1,0 +1,12 @@
+# Landing riservata: non indicizzare.
+User-agent: *
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
