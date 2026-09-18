@@ -25,14 +25,14 @@ form?.addEventListener("submit", async (event) => {
   if (form._honey.value) return;
 
   const payload = {
-    _subject: "Demo Aftercore · lavorazioni meccaniche",
+    _subject: "Demo Aftercore · Private AI on-premise",
     name: form.name.value.trim(),
     company: form.company.value.trim(),
     role: form.role.value.trim(),
     email: form.email.value.trim(),
-    rfq_volume: form.rfq_volume.value,
-    incomplete_drawings: form.incomplete_drawings.value,
-    consuntivo: form.consuntivo.value,
+    users: form.users.value,
+    first_agent: form.first_agent.value,
+    constraint: form.constraint.value,
   };
 
   form.classList.add("is-sending");
@@ -54,9 +54,9 @@ form?.addEventListener("submit", async (event) => {
       `Azienda: ${payload.company}`,
       `Ruolo: ${payload.role}`,
       `Email: ${payload.email}`,
-      `RFQ a settimana: ${payload.rfq_volume}`,
-      `Disegni incompleti: ${payload.incomplete_drawings}`,
-      `Consuntivo tempi ciclo: ${payload.consuntivo}`,
+      `Utenti previsti: ${payload.users}`,
+      `Primo agente: ${payload.first_agent}`,
+      `Vincolo principale: ${payload.constraint}`,
     ].join("%0D%0A");
     window.location.href = `mailto:gbasso@aftercore.ai?subject=${encodeURIComponent(payload._subject)}&body=${body}`;
     errorEl.textContent = "Se la mail non si apre, scrivi a gbasso@aftercore.ai";
