@@ -230,51 +230,255 @@
       </div>
     </section>
 
-    <section class="section" id="agenti">
+    <section class="section agents" id="agenti">
       <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow">La suite</span>
-          <h2 style="max-width:22ch">Otto agenti operativi per il manifatturiero</h2>
-          <p class="lead">Non si parte da un modello vuoto: la macchina arriva con gli agenti del manifatturiero già costruiti. Stessa appliance, stessi dati; si attivano uno alla volta, per reparto.</p>
+        <div class="section-head" style="text-align:center">
+          <span class="eyebrow">Gli agenti</span>
+          <h2 style="max-width:none">Otto agenti operativi, collegati allo stesso core</h2>
+          <p class="lead" style="margin:16px auto 0">Non si parte da un modello vuoto: la macchina arriva con gli agenti del manifatturiero già costruiti. Stessa appliance, stessi dati, stesso modello; si attivano uno alla volta, per reparto.</p>
         </div>
+
+        <div class="hub" aria-hidden="true">
+          <svg viewBox="0 0 880 560">
+            <defs>
+              <linearGradient id="hubCore" x1="374" y1="204" x2="506" y2="356" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5ad7ff"/>
+                <stop offset="1" stop-color="#0e80f6"/>
+              </linearGradient>
+              <radialGradient id="hubGlow">
+                <stop stop-color="#38d5ee" stop-opacity="0.3"/>
+                <stop offset="1" stop-color="#38d5ee" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+
+            <ellipse cx="440" cy="280" rx="190" ry="160" fill="url(#hubGlow)"/>
+            <ellipse class="hub-orbit" cx="440" cy="280" rx="330" ry="205"/>
+
+            <g class="hub-link">
+              <line x1="440" y1="280" x2="207" y2="135"/>
+              <line x1="440" y1="280" x2="440" y2="75"/>
+              <line x1="440" y1="280" x2="673" y2="135"/>
+              <line x1="440" y1="280" x2="770" y2="280"/>
+              <line x1="440" y1="280" x2="673" y2="425"/>
+              <line x1="440" y1="280" x2="440" y2="485"/>
+              <line x1="440" y1="280" x2="207" y2="425"/>
+              <line x1="440" y1="280" x2="110" y2="280"/>
+            </g>
+
+            <g class="hub-core">
+              <path d="M440 204L505.8 242V318L440 356L374.2 318V242Z" fill="url(#hubCore)"/>
+              <g class="hub-core-icon" transform="translate(427 237) scale(1.083)">
+                <rect x="4" y="4" width="16" height="16" rx="2"/>
+                <rect x="9" y="9" width="6" height="6"/>
+                <line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/>
+                <line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/>
+                <line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/>
+                <line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/>
+              </g>
+              <text class="hub-core-title" x="440" y="294" text-anchor="middle">APPLIANCE</text>
+              <text class="hub-core-sub" x="440" y="312" text-anchor="middle">modello in locale</text>
+            </g>
+
+            <g class="hub-nodes">
+              <g>
+                <rect class="hub-node" x="120" y="108" width="174" height="54" rx="14"/>
+                <g class="hub-icon" transform="translate(136 125) scale(0.833)">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+                </g>
+                <text class="hub-label" x="168" y="140">Preventivazione</text>
+              </g>
+              <g>
+                <rect class="hub-node" x="344" y="48" width="192" height="54" rx="14"/>
+                <g class="hub-icon" transform="translate(360 65) scale(0.833)">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </g>
+                <text class="hub-label" x="392" y="80">Assistenza tecnica</text>
+              </g>
+              <g>
+                <rect class="hub-node" x="614" y="108" width="117" height="54" rx="14"/>
+                <g class="hub-icon" transform="translate(630 125) scale(0.833)">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                  <polyline points="16 7 22 7 22 13"/>
+                </g>
+                <text class="hub-label" x="662" y="140">Vendite</text>
+              </g>
+              <g>
+                <rect class="hub-node" x="710" y="253" width="121" height="54" rx="14"/>
+                <g class="hub-icon" transform="translate(726 270) scale(0.833)">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                  <polyline points="3.3 7 12 12 20.7 7"/>
+                  <line x1="12" y1="22" x2="12" y2="12"/>
+                </g>
+                <text class="hub-label" x="758" y="285">Ricambi</text>
+              </g>
+              <g>
+                <rect class="hub-node" x="610" y="398" width="127" height="54" rx="14"/>
+                <g class="hub-icon" transform="translate(626 415) scale(0.833)">
+                  <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/>
+                  <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/>
+                </g>
+                <text class="hub-label" x="658" y="430">Ticketing</text>
+              </g>
+              <g>
+                <rect class="hub-node" x="346" y="458" width="188" height="54" rx="14"/>
+                <g class="hub-icon" transform="translate(362 475) scale(0.833)">
+                  <rect x="1" y="3" width="15" height="13"/>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                  <circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+                </g>
+                <text class="hub-label" x="394" y="490">Acquisti e fornitori</text>
+              </g>
+              <g>
+                <rect class="hub-node" x="128" y="398" width="158" height="54" rx="14"/>
+                <g class="hub-icon" transform="translate(144 415) scale(0.833)">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                </g>
+                <text class="hub-label" x="176" y="430">Documentale</text>
+              </g>
+              <g>
+                <rect class="hub-node" x="26" y="253" width="169" height="54" rx="14"/>
+                <g class="hub-icon" transform="translate(42 270) scale(0.833)">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                </g>
+                <text class="hub-label" x="74" y="285">Qualità dei dati</text>
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        <div class="core-chip">
+          <svg viewBox="0 0 120 132" fill="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="chipCore" x1="20" y1="10" x2="100" y2="120" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#5ad7ff"/>
+                <stop offset="1" stop-color="#0e80f6"/>
+              </linearGradient>
+            </defs>
+            <path d="M60 4L112 34V98L60 128L8 98V34L60 4Z" fill="url(#chipCore)"/>
+            <g fill="none" stroke="#071222" stroke-width="2" stroke-linecap="round">
+              <rect x="42" y="48" width="36" height="36" rx="5"/>
+              <rect x="53" y="59" width="14" height="14"/>
+              <path d="M52 38v10M68 38v10M52 84v10M68 84v10M82 56h10M82 72h10M28 56h10M28 72h10"/>
+            </g>
+          </svg>
+          <div>
+            <strong>Appliance aftercore · un solo core</strong>
+            <small>Otto agenti collegati allo stesso modello e agli stessi documenti, in rete locale.</small>
+          </div>
+        </div>
+
+        <p class="hub-note"><span class="dot-ok"></span>Un solo core: stesso hardware, stesso modello, stessi documenti indicizzati. Gli agenti condividono ciò che imparano.</p>
+
         <div class="agents-grid">
           <article class="agent">
-            <span class="cap-num">01</span>
+            <div class="agent-top">
+              <span class="agent-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                  <polyline points="14 2 14 8 20 8"/>
+                  <line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/>
+                </svg>
+              </span>
+              <span class="cap-num">01</span>
+            </div>
             <h3>Preventivazione</h3>
             <p>Legge capitolati e distinte, calcola i costi da listini e storico, prepara l'offerta da approvare.</p>
           </article>
           <article class="agent">
-            <span class="cap-num">02</span>
+            <div class="agent-top">
+              <span class="agent-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                </svg>
+              </span>
+              <span class="cap-num">02</span>
+            </div>
             <h3>Assistenza tecnica</h3>
             <p>Identifica il guasto, consulta manuali e distinte, propone la soluzione già usata su casi simili.</p>
           </article>
           <article class="agent">
-            <span class="cap-num">03</span>
+            <div class="agent-top">
+              <span class="agent-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/>
+                  <polyline points="16 7 22 7 22 13"/>
+                </svg>
+              </span>
+              <span class="cap-num">03</span>
+            </div>
             <h3>Vendite</h3>
             <p>Risponde alle richieste in arrivo, recupera configurazioni e listini, tiene in piedi i follow-up.</p>
           </article>
           <article class="agent">
-            <span class="cap-num">04</span>
+            <div class="agent-top">
+              <span class="agent-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                  <polyline points="3.3 7 12 12 20.7 7"/>
+                  <line x1="12" y1="22" x2="12" y2="12"/>
+                </svg>
+              </span>
+              <span class="cap-num">04</span>
+            </div>
             <h3>Ricambi</h3>
             <p>Trova il pezzo da descrizione, matricola o foto, con disponibilità e prezzo dal gestionale.</p>
           </article>
           <article class="agent">
-            <span class="cap-num">05</span>
+            <div class="agent-top">
+              <span class="agent-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="22 12 16 12 14 15 10 15 8 12 2 12"/>
+                  <path d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z"/>
+                </svg>
+              </span>
+              <span class="cap-num">05</span>
+            </div>
             <h3>Ticketing</h3>
             <p>Email, WhatsApp e chat diventano ticket classificati per macchina, cliente e urgenza.</p>
           </article>
           <article class="agent">
-            <span class="cap-num">06</span>
+            <div class="agent-top">
+              <span class="agent-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="1" y="3" width="15" height="13"/>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                  <circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/>
+                </svg>
+              </span>
+              <span class="cap-num">06</span>
+            </div>
             <h3>Acquisti e fornitori</h3>
             <p>Invia le richieste di quotazione, confronta le risposte e segue i tempi di consegna promessi.</p>
           </article>
           <article class="agent">
-            <span class="cap-num">07</span>
+            <div class="agent-top">
+              <span class="agent-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                </svg>
+              </span>
+              <span class="cap-num">07</span>
+            </div>
             <h3>Documentale</h3>
             <p>Manuali, certificazioni, norme e capitolati: risponde citando documento e revisione.</p>
           </article>
           <article class="agent">
-            <span class="cap-num">08</span>
+            <div class="agent-top">
+              <span class="agent-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                </svg>
+              </span>
+              <span class="cap-num">08</span>
+            </div>
             <h3>Qualità dei dati</h3>
             <p>Ripulisce codici duplicati e descrizioni incoerenti, completa le distinte rimaste a metà.</p>
           </article>
